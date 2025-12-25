@@ -21,7 +21,9 @@
     "build": "tsc",
     "start": "node ./dist/app.js",
     "dev": "ts-node --esm ./src/app.ts",
-    "llmchain": "ts-node --esm ./src/basicPromptTemplates.ts"
+    "llmchain": "ts-node --esm ./src/basicPromptTemplates.ts",
+    "lcelChains": "ts-node --esm ./src/LcelChains.ts",
+    "llmparameters": "ts-node --esm ./src/llmparameters.ts"
   },
   "devDependencies": {
     "@types/cli-progress": "^3.11.6",
