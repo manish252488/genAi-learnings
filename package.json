@@ -1,7 +1,7 @@
 {
   "name": "ai-js",
   "version": "1.0.0",
-  "description": "",
+  "description": "Comprehensive Generative AI learning project demonstrating LLM integration, RAG systems, vector embeddings, and LangChain implementation",
   "main": "index.js",
   "type": "module",
   "license": "MIT",
@@ -16,7 +16,20 @@
     "url": ""
   },
   "bugs": "",
-  "keywords": [],
+  "keywords": [
+    "generative-ai",
+    "llm",
+    "langchain",
+    "rag",
+    "vector-embeddings",
+    "pinecone",
+    "openai",
+    "gemini",
+    "typescript",
+    "machine-learning",
+    "nlp",
+    "prompt-engineering"
+  ],
   "scripts": {
     "build": "tsc",
     "start": "node ./dist/app.js",
