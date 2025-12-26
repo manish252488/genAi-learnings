@@ -42,7 +42,8 @@
     "geminiVectorEmbedding": "ts-node --esm ./src/rag/gemini/vectorEmbedding.ts",
     "vectorization": "ts-node --esm ./src/rag/vectorization/vector.ts",
     "retriever": "ts-node --esm ./src/rag/retriever/retrive.ts",
-    "raglcel": "ts-node --esm ./src/rag/augmentation/raglcel.ts"
+    "raglcel": "ts-node --esm ./src/rag/augmentation/raglcel.ts",
+    "ragWithChatHistory": "ts-node --esm ./src/rag/chathistory/ragWithChatHistory.ts"
   },
   "devDependencies": {
     "@types/cli-progress": "^3.11.6",
