@@ -24,6 +24,7 @@ type ContentType =
   | "behavioral"
   | "profile"
   | "services"
+  | "interview"
   | "general";
 
 function mapContentType(sectionTitle: string): ContentType {
@@ -37,14 +38,17 @@ function mapContentType(sectionTitle: string): ContentType {
   }
   if (t.includes("behavioral")) return "behavioral";
   if (t.includes("services")) return "services";
+  if (t.includes("interview") || t.includes("model answers")) return "interview";
   if (
     t.includes("personal information") ||
     t.includes("quick reference") ||
-    t.includes("professional summary")
+    t.includes("professional summary") ||
+    t.includes("contact emails")
   ) {
     return "profile";
   }
   if (t.includes("recruiter")) return "recruiter";
+  if (t.includes("education") || t.includes("certification")) return "profile";
   if (t.includes("project")) return "project";
   return "general";
 }

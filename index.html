@@ -45,7 +45,7 @@
         "@type": "CollegeOrUniversity",
         "name": "DRIEMS University"
       },
-      "knowsAbout": ["FinTech", "Web3", "React", "Node.js", "TypeScript", "PostgreSQL", "Finance Tracker", "LangChain", "RAG", "OpenAI"]
+      "knowsAbout": ["FinTech", "Web3", "React", "Node.js", "TypeScript", "PostgreSQL", "Finance Tracker", "LangChain", "RAG", "OpenAI", "Claude", "Cursor", "Solidity", "Smart Contracts", "Escrow"]
     }
     </script>
     <style>
@@ -154,9 +154,12 @@
                 <h3>Availability & Notice Period</h3>
                 <ul>
                     <li><strong>Notice Period:</strong> 0 days - Can join immediately</li>
-                    <li><strong>Current Status:</strong> Available for immediate start</li>
+                    <li><strong>Current Status:</strong> Available for immediate start; actively open to new full-time or contract opportunities</li>
                     <li><strong>Notice Period Already Served:</strong> Yes, 0 days notice period already completed</li>
                     <li><strong>Availability Date:</strong> Immediate - Can start right away</li>
+                    <li><strong>Interview Scheduling:</strong> Flexible across IST and overlapping US/EU hours for calls</li>
+                    <li><strong>Why looking / open to roles:</strong> Seeking the next challenge with stronger ownership of product impact — FinTech, Web3, AI-powered products, or modern full-stack platforms — while continuing to ship production systems end-to-end</li>
+                    <li><strong>Work authorization:</strong> Indian citizen based in India; can work remotely for global companies; open to contractor or full-time arrangements as required by the employer</li>
                 </ul>
             </div>
 
@@ -215,8 +218,24 @@
                     <li><strong>RAG System Development:</strong> Yes, built a RAG (Retrieval Augmented Generation) system using LangChain</li>
                     <li><strong>Vector Database:</strong> Used Pinecone as the vector database for the RAG system</li>
                     <li><strong>RAG Technology Stack:</strong> LangChain framework with Pinecone vector database</li>
-                    <li><strong>AI/ML Experience:</strong> Hands-on experience in building AI-powered applications with RAG architecture</li>
+                    <li><strong>AI/ML Experience:</strong> Hands-on experience in building AI-powered applications with RAG architecture, including Finance Tracker statement intelligence and the Portfolio Assistant chatbot</li>
                     <li><strong>Vector Embeddings:</strong> Experience with vector embeddings and semantic search capabilities</li>
+                    <li><strong>AI-Assisted Delivery (Claude + Cursor):</strong> Actively uses Claude and Cursor as day-to-day engineering copilots to speed up delivery — scaffolding features, refactoring, debugging, writing tests, drafting docs, and iterating on prompts/RAG pipelines — while retaining full ownership of architecture, code review, and production decisions</li>
+                    <li><strong>Delivery Impact:</strong> AI tooling shortens the loop from idea → implementation → review, especially for boilerplate, multi-file refactors, and exploring unfamiliar APIs, without replacing engineering judgment on security, money-flow, and product correctness</li>
+                    <li><strong>AI Product Building:</strong> Ships production AI features (structured LLM outputs, OTP/auth flows tied to AI usage metering, context-aware chat) rather than only experimenting with prompts</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Smart Contract & On-Chain Experience</h3>
+                <ul>
+                    <li><strong>Solidity Development:</strong> Writes and deploys Solidity smart contracts (Remix IDE and standard EVM toolchain) for payment and trust-minimized workflows</li>
+                    <li><strong>Escrow Contracts:</strong> Designed and worked on escrow-style smart contracts that hold funds conditionally until release conditions are met (e.g. payer/payee agreement, milestone completion, or oracle/backend-triggered settlement)</li>
+                    <li><strong>Escrow Patterns:</strong> Experience with deposit → lock → release/refund flows, multi-party roles (depositor, beneficiary, arbiter), timeout/expiry handling, and clear event logs for off-chain indexing</li>
+                    <li><strong>Related Contract Work:</strong> Beyond escrows — payment-oriented contracts, session/audit recording on-chain, and integrations that move value between wallets and application backends on EVM networks</li>
+                    <li><strong>Full-Stack Bridge:</strong> Connects contracts to Node.js backends and frontends via Web3.js / Ethers.js / Wallet Connect — ABI encoding, transaction submission, receipt handling, and user-facing status UX</li>
+                    <li><strong>Networks:</strong> EVM mainnet/testnet work plus Concordium-related wallet/payment integration experience at RocketFuel</li>
+                    <li><strong>Safety Mindset:</strong> Treats contracts as money-critical code — careful about access control, reentrancy-aware patterns, explicit state machines, and verifying flows end-to-end before production use</li>
                 </ul>
             </div>
 
@@ -228,6 +247,21 @@
                     <li><strong>Scalability Experience:</strong> Built scalable systems capable of handling high transaction volumes</li>
                     <li><strong>Performance Optimization:</strong> Experience in optimizing systems for high throughput and low latency</li>
                     <li><strong>Production Systems:</strong> Extensive experience with production systems handling real-world transaction volumes</li>
+                    <li><strong>Reliability Patterns:</strong> Familiar with idempotent APIs, retries with backoff, job pooling / queue-style processing for pay-in workloads, and reconciliation-minded money flows</li>
+                    <li><strong>Observability:</strong> Uses logging, CloudWatch (AWS), and operational dashboards/metrics where deployed; prioritizes actionable alerts over noise for payment and auth paths</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Testing, Security & Engineering Practices</h3>
+                <ul>
+                    <li><strong>Testing mindset:</strong> Prefers testing critical paths — payment flows, auth, escrow/state machines, and API contracts — with unit/integration checks and manual end-to-end verification before production</li>
+                    <li><strong>Tools:</strong> Experience with pytest (Jarvis), TypeScript/compile-time checks, ESLint, build-time validation; comfortable adding Jest/Vitest-style tests for Node/React codebases when the team standard requires it</li>
+                    <li><strong>CI quality gates:</strong> GitHub CI/CD for automated build/test/deploy; cares about failing fast on type and lint errors</li>
+                    <li><strong>Security (web/API):</strong> JWT/httpOnly cookies, bcrypt password hashing, OTP verification, CORS awareness, secrets in environment variables (never committed), least-privilege thinking for admin routes</li>
+                    <li><strong>Security (FinTech / money):</strong> Treats money movement as critical — explicit state transitions, audit trails, careful vendor integrations, and verification of deposit/release/refund paths for escrow-style contracts</li>
+                    <li><strong>Privacy:</strong> Designed Finance Tracker so bank statement files stay client-side for parsing; server stores metrics not raw statements; narrations masked before AI where appropriate</li>
+                    <li><strong>Code review:</strong> Reviews for correctness, edge cases, maintainability, and security — not just style</li>
                 </ul>
             </div>
 
@@ -321,9 +355,9 @@
                 <ul>
                     <li><strong>Learning Style:</strong> Hands-on learner who prefers learning by doing. Combines theoretical understanding with practical implementation. Learns best through building projects and solving real problems.</li>
                     <li><strong>Continuous Learning:</strong> Committed to continuous learning and staying updated with industry trends. Regularly explores new technologies, frameworks, and best practices. Shares learnings with the team.</li>
-                    <li><strong>Technology Adoption:</strong> Early adopter of new technologies when they solve real problems. Evaluates new tools and frameworks critically before recommending adoption. Balances innovation with stability.</li>
+                    <li><strong>Technology Adoption:</strong> Early adopter of new technologies when they solve real problems. Evaluates new tools and frameworks critically before recommending adoption. Balances innovation with stability. Actively uses AI assistants (Claude, Cursor) to accelerate coding and learning while validating outputs personally.</li>
                     <li><strong>Skill Development:</strong> Proactively identifies skill gaps and works on improving them. Seeks opportunities to work on challenging projects that push boundaries. Open to learning from mistakes.</li>
-                    <li><strong>Knowledge Sources:</strong> Learns from documentation, online courses, technical blogs, open-source projects, and community discussions. Attends webinars and tech conferences when possible.</li>
+                    <li><strong>Knowledge Sources:</strong> Learns from documentation, online courses, technical blogs, open-source projects, community discussions, and AI-assisted exploration (with verification). Attends webinars and tech conferences when possible.</li>
                     <li><strong>Teaching Others:</strong> Enjoys teaching and explaining complex concepts to others. Finds that teaching helps solidify own understanding. Creates documentation and tutorials for team knowledge sharing.</li>
                 </ul>
             </div>
@@ -415,6 +449,8 @@
                     <li style="margin: 10px 0;"><strong>✅ Code Review:</strong> Had code review responsibilities at RocketFuel Blockchain</li>
                     <li style="margin: 10px 0;"><strong>✅ Mentoring:</strong> Mentored 3 people at Acquaintsoft Tech</li>
                     <li style="margin: 10px 0;"><strong>✅ RAG System:</strong> Built RAG system using LangChain with Pinecone</li>
+                    <li style="margin: 10px 0;"><strong>✅ AI Delivery:</strong> Uses Claude + Cursor daily to accelerate feature delivery while owning architecture &amp; reviews</li>
+                    <li style="margin: 10px 0;"><strong>✅ Smart Contracts:</strong> Solidity experience including escrow and payment-related on-chain flows</li>
                     <li style="margin: 10px 0;"><strong>✅ Transaction Scale:</strong> Handled 1000+ transactions per day</li>
                     <li style="margin: 10px 0;"><strong>✅ Work Style:</strong> Proactive, self-driven, takes ownership, excellent remote worker</li>
                     <li style="margin: 10px 0;"><strong>✅ Communication:</strong> Clear, concise, responsive (within 24 hours), strong cross-cultural experience</li>
@@ -422,6 +458,9 @@
                     <li style="margin: 10px 0;"><strong>✅ Teamwork:</strong> Collaborative, supportive, knowledge-sharing, effective cross-functional partner</li>
                     <li style="margin: 10px 0;"><strong>✅ Learning:</strong> Continuous learner, hands-on approach, early adopter, shares knowledge</li>
                     <li style="margin: 10px 0;"><strong>✅ Leadership:</strong> Leads by example, takes initiative, accountable, strong project management</li>
+                    <li style="margin: 10px 0;"><strong>✅ Join date:</strong> Immediate (0-day notice)</li>
+                    <li style="margin: 10px 0;"><strong>✅ Live products:</strong> Finance Tracker + Webhook Viewer + portfolio RAG assistant</li>
+                    <li style="margin: 10px 0;"><strong>✅ Education:</strong> B.Tech CSE (DRIEMS, 2020) · Solidity &amp; LangChain/RAG certifications</li>
                 </ul>
             </div>
         </section>
@@ -430,18 +469,22 @@
         <section class="section">
             <h2>Professional Summary</h2>
             <p>Senior Full Stack Engineer with <span class="highlight">5+ years of experience</span> designing and building scalable, high-performance applications. Strong expertise in Node.js, PostgreSQL, and MongoDB, with hands-on experience in microservices architecture, RESTful APIs, and seamless payment integrations.</p>
+
+            <h3>Elevator Pitch (Tell Me About Yourself)</h3>
+            <p>I'm a Senior Full Stack Engineer with 5+ years building FinTech and Web3 products end-to-end. At RocketFuel Blockchain I've owned multiple payment products — pay-in, payouts, invoicing, loyalty, and merchant SDKs — including money-flow architecture, vendor selection, Web3 wallet integrations, and Solidity work such as escrow-style contracts. I also ship my own production products like Finance Tracker (AI bank-statement intelligence) and a Portfolio Assistant RAG chatbot. Day to day I use Claude and Cursor to move faster, but I still own architecture, reviews, and production correctness. I'm available to join immediately and looking for a role where I can own impactful full-stack systems.</p>
             
             <h3>Key Highlights</h3>
             <ul>
                 <li><strong>5+ Years</strong> of professional experience</li>
                 <li><strong>4+ Projects</strong> completed across various industries</li>
                 <li><strong>3 Companies</strong> worked with (RocketFuel Blockchain, Acquaintsoft Tech, Hashbinary)</li>
-                <li>Expert in <strong>blockchain technologies</strong> and Web3 integration</li>
+                <li>Expert in <strong>blockchain technologies</strong>, Web3 integration, and <strong>Solidity smart contracts</strong> (including escrow and payment flows)</li>
                 <li>Proven track record in <strong>team leadership</strong> and mentoring junior developers</li>
                 <li>Specialized in <strong>payment system integrations</strong> and fintech solutions</li>
                 <li><strong>Full product ownership</strong> experience at RocketFuel Blockchain across multiple products</li>
                 <li>Extensive experience in <strong>vendor management</strong>, evaluation, and selection with decision-making authority</li>
                 <li>Expertise in <strong>multi-currency payout systems</strong> (crypto and fiat) for US and LATAM markets</li>
+                <li>Builds production <strong>AI/RAG products</strong> and uses <strong>Claude + Cursor</strong> to speed up day-to-day delivery without sacrificing ownership</li>
             </ul>
         </section>
 
@@ -486,6 +529,16 @@
                     <li>Established acceptance criteria and evaluation frameworks for vendor onboarding</li>
                 </ul>
 
+                <h4>Smart Contract Development:</h4>
+                <ul>
+                    <li>Wrote and deployed <span class="highlight">Solidity smart contracts</span> for blockchain-based payment and trust workflows using Remix IDE and EVM tooling</li>
+                    <li>Built and iterated on <strong>escrow contracts</strong> — funds deposited and locked until release conditions are satisfied (counterparty confirmation, milestone completion, or controlled release by an authorized role)</li>
+                    <li>Modeled escrow state machines: deposit → locked → released / refunded / expired, with events for off-chain indexing and UX status updates</li>
+                    <li>Worked on related on-chain patterns alongside escrows: payment settlement helpers, conditional releases, and immutable session/audit recording patterns used in portfolio demos</li>
+                    <li>Integrated contracts with application layers via Web3.js / Ethers.js — signing, gas-aware submission, receipt polling, and mapping contract events to backend/frontend state</li>
+                    <li>Applied a money-safe mindset: explicit access control, careful state transitions, and end-to-end verification of deposit/release/refund paths before relying on contracts in product flows</li>
+                </ul>
+
                 <h4>Key Responsibilities & Achievements:</h4>
                 <ul>
                     <li>Had <span class="highlight">code review responsibilities</span> while working with RocketFuel Blockchain, conducting regular code reviews to ensure code quality, best practices, and maintainability</li>
@@ -500,10 +553,11 @@
                     <li>Implemented GitHub CI/CD pipelines for automated testing, building, and deployment processes</li>
                     <li>Collaborated with cross-functional teams and partners to align development efforts and enhance project outcomes</li>
                     <li>Implemented Web3 wallet connection to facilitate payments for EVM and Concordium networks, building custom adapters for seamless integration</li>
-                    <li>Deployed smart contracts on Solidity using Remix IDE for blockchain-based payment solutions</li>
+                    <li>Deployed smart contracts on Solidity using Remix IDE for blockchain-based payment solutions, including <strong>escrow-style</strong> and related conditional-release contracts</li>
                     <li>Architected dependency injection patterns and structure designs to solve multi-vendor integration challenges with loose coupling, enabling scalable vendor integrations</li>
                     <li>Designed system architectures with comprehensive feature specifications and money flow diagrams for payment and payout systems</li>
                     <li>Collaborated with UI/UX designers to review designs and align development efforts, playing a key role in product design decisions</li>
+                    <li>Uses <strong>Claude and Cursor</strong> as AI coding assistants to accelerate implementation and refactors while keeping ownership of design, security, and production readiness</li>
                 </ul>
 
                 <div class="tech-stack">
@@ -518,10 +572,13 @@
                     <span class="tech-tag">Ether.js</span>
                     <span class="tech-tag">Wallet Connect</span>
                     <span class="tech-tag">Solidity</span>
+                    <span class="tech-tag">Escrow Contracts</span>
                     <span class="tech-tag">Remix IDE</span>
                     <span class="tech-tag">EVM</span>
                     <span class="tech-tag">Concordium</span>
                     <span class="tech-tag">GitHub CI/CD</span>
+                    <span class="tech-tag">Claude</span>
+                    <span class="tech-tag">Cursor</span>
                 </div>
             </div>
 
@@ -540,6 +597,8 @@
                     <li>Configured and managed AWS EC2 instances with nginx and Apache web servers for production deployments</li>
                     <li>Implemented AWS deployment and CI/CD pipelines for automated testing and deployment</li>
                     <li>Integrated third-party services including payment gateways, email providers, and cloud storage solutions</li>
+                    <li>Collaborated with clients/stakeholders to clarify requirements and deliver iterative releases</li>
+                    <li>Balanced feature delivery with mentoring — code reviews, pair debugging, and raising team coding standards</li>
                 </ul>
 
                 <div class="tech-stack">
@@ -568,6 +627,7 @@
                     <li>Developed user-friendly web interfaces using React.js and React Native to enhance UI/UX and increase engagement</li>
                     <li>Built backend services using Node.js with Express.js framework and implemented RESTful APIs to facilitate efficient communication between frontend and backend systems</li>
                     <li>Collaborated with cross-functional teams to troubleshoot bugs and refine product features</li>
+                    <li>Early-career foundation in full-stack delivery — shipping UI + API features with iterative feedback from design and product partners</li>
                 </ul>
 
                 <div class="tech-stack">
@@ -625,7 +685,7 @@
                 </ul>
                 
                 <h4>My Contribution:</h4>
-                <p>Worked with <span class="highlight">full ownership</span> on all RocketFuel products including Invoicing via Crypto, Payin Merchant SDK, Payin Loyalty, Payouts (Crypto & Fiat), and Business (B2B) solutions. Designed comprehensive system architectures with detailed feature specifications and money flow diagrams for payment and payout systems. Created architecture designs mapping transaction flows from initiation to settlement, covering both crypto and fiat currency transactions, cross-border transfers, currency conversions, and settlement processes. Handled vendor evaluation and selection processes, working directly with multiple vendors to finalize partnerships based on acceptance criteria. Implemented Web3 wallet connection to facilitate payments for EVM and Concordium networks, building custom adapters for seamless integration. Deployed smart contracts on Solidity using Remix IDE for blockchain-based payment solutions. Architected dependency injection patterns and structure designs to solve multi-vendor integration challenges with loose coupling, enabling scalable vendor integrations. Developed specialized payout solutions for US and LATAM countries supporting both crypto and fiat currencies. Collaborated with UI/UX designers to review designs and align development efforts, playing a key role in product design decisions. Developed crypto pay-in and payout system, built Node.js SDK for partner integration, and implemented Web3-based age verification methods.</p>
+                <p>Worked with <span class="highlight">full ownership</span> on all RocketFuel products including Invoicing via Crypto, Payin Merchant SDK, Payin Loyalty, Payouts (Crypto & Fiat), and Business (B2B) solutions. Designed comprehensive system architectures with detailed feature specifications and money flow diagrams for payment and payout systems. Created architecture designs mapping transaction flows from initiation to settlement, covering both crypto and fiat currency transactions, cross-border transfers, currency conversions, and settlement processes. Handled vendor evaluation and selection processes, working directly with multiple vendors to finalize partnerships based on acceptance criteria. Implemented Web3 wallet connection to facilitate payments for EVM and Concordium networks, building custom adapters for seamless integration. Developed and deployed Solidity smart contracts for payment solutions, including <span class="highlight">escrow contracts</span> (deposit, lock, conditional release/refund) and related on-chain settlement helpers, wired end-to-end through Web3.js/Ethers.js. Architected dependency injection patterns and structure designs to solve multi-vendor integration challenges with loose coupling, enabling scalable vendor integrations. Developed specialized payout solutions for US and LATAM countries supporting both crypto and fiat currencies. Collaborated with UI/UX designers to review designs and align development efforts, playing a key role in product design decisions. Developed crypto pay-in and payout system, built Node.js SDK for partner integration, and implemented Web3-based age verification methods.</p>
 
                 <div class="tech-stack">
                     <span class="tech-tag">Next.js</span>
@@ -639,6 +699,7 @@
                     <span class="tech-tag">Ether.js</span>
                     <span class="tech-tag">Wallet Connect</span>
                     <span class="tech-tag">Solidity</span>
+                    <span class="tech-tag">Escrow Contracts</span>
                     <span class="tech-tag">Remix IDE</span>
                     <span class="tech-tag">EVM</span>
                     <span class="tech-tag">Concordium</span>
@@ -1025,16 +1086,18 @@
 
             <h3>Frontend Technologies</h3>
             <ul>
-                <li><strong>Frameworks & Libraries:</strong> Next.js, React.js, Vue.js, React Native</li>
+                <li><strong>Frameworks & Libraries:</strong> Next.js, React.js, Vue.js, Angular, React Native</li>
                 <li><strong>Styling:</strong> SCSS, Tailwind CSS, Ant Design, Material UI, Bootstrap</li>
-                <li><strong>State Management:</strong> React Hooks, Context API</li>
-                <li><strong>Build Tools:</strong> Webpack, Babel, react-app-rewired</li>
+                <li><strong>State Management:</strong> React Hooks, Context API, TanStack Query</li>
+                <li><strong>Build Tools:</strong> Webpack, Babel, Vite, react-app-rewired</li>
+                <li><strong>Languages:</strong> TypeScript (preferred for production apps), JavaScript (ES6+)</li>
             </ul>
 
             <h3>Backend Technologies</h3>
             <ul>
                 <li><strong>Runtime & Frameworks:</strong> Node.js, Hapi.js, Express.js</li>
                 <li><strong>Blockchain:</strong> Web3.js, Ether.js, Wallet Connect, Solidity, Remix IDE, EVM, Concordium, Reown AppKit, Wagmi, Viem</li>
+                <li><strong>Smart Contracts:</strong> Escrow contracts (deposit/lock/release/refund), conditional payment settlement, on-chain session/audit recording, event-driven off-chain indexing</li>
                 <li><strong>Message Queues:</strong> Kafka</li>
                 <li><strong>API Design:</strong> RESTful APIs, Microservices Architecture</li>
                 <li><strong>Real-Time Communication:</strong> Socket.IO, WebSocket, Server-Sent Events (SSE)</li>
@@ -1042,9 +1105,10 @@
 
             <h3>Databases</h3>
             <ul>
-                <li><strong>Relational:</strong> PostgreSQL, MySQL</li>
-                <li><strong>NoSQL:</strong> MongoDB</li>
-                <li><strong>ORM/ODM:</strong> TypeORM</li>
+                <li><strong>Relational:</strong> PostgreSQL, MySQL — schema design, migrations, indexing for common query paths</li>
+                <li><strong>NoSQL:</strong> MongoDB — flexible documents for chat history and product data where appropriate</li>
+                <li><strong>ORM/ODM:</strong> TypeORM; raw SQL migrations (e.g. Finance Tracker users, email_otps, report_runs)</li>
+                <li><strong>Data integrity:</strong> Prefer explicit transactional thinking for money and auth-related writes; store metrics/audit rather than unnecessary PII when privacy matters</li>
             </ul>
 
             <h3>DevOps & Infrastructure</h3>
@@ -1067,10 +1131,12 @@
             <ul>
                 <li><strong>RAG Systems:</strong> LangChain framework for building RAG applications with retrieval-augmented generation</li>
                 <li><strong>Vector Databases:</strong> Pinecone for vector storage and semantic search</li>
-                <li><strong>AI Integration:</strong> Experience building AI-powered applications with retrieval-augmented generation, LLM integration (OpenAI, etc.)</li>
+                <li><strong>AI Integration:</strong> Experience building AI-powered applications with retrieval-augmented generation, LLM integration (OpenAI, Claude, etc.)</li>
+                <li><strong>AI Coding Assistants:</strong> Claude and Cursor used daily to accelerate delivery — scaffolding, refactors, debugging, tests, docs, and RAG/prompt iteration — with human ownership of architecture and production decisions</li>
                 <li><strong>Vector Embeddings:</strong> Implementation of vector embeddings for semantic search and similarity matching</li>
                 <li><strong>Chatbot Development:</strong> Real-time AI chatbots with WebSocket communication, context management, and conversation history</li>
                 <li><strong>Natural Language Processing:</strong> Experience with prompt engineering, context-aware responses, and multi-turn conversations</li>
+                <li><strong>Structured LLM Outputs:</strong> Zod / schema-constrained outputs for reliable AI pipelines (e.g. Finance Tracker classification and reports)</li>
             </ul>
 
             <h3>Development Practices</h3>
@@ -1079,6 +1145,10 @@
                 <li>ESM (ECMAScript Modules) compatibility</li>
                 <li>SDK Development (Node.js SDKs, npm packages)</li>
                 <li>Dependency Injection patterns</li>
+                <li>AI-assisted development with Claude and Cursor (accelerated delivery with human review)</li>
+                <li>Agile / iterative delivery — break work into shippable increments, communicate blockers early</li>
+                <li>Testing critical paths (auth, payments, contracts, APIs); ESLint + TypeScript as quality gates; pytest on Python projects</li>
+                <li>Git branching, PR reviews, and CI/CD (GitHub Actions)</li>
                 <li>Code splitting and optimization</li>
                 <li>Responsive design and mobile-first development</li>
                 <li>Internationalization (i18n) with react-i18next and i18next</li>
@@ -1117,12 +1187,14 @@
 
             <div class="service-item">
                 <h3>Blockchain Integration</h3>
-                <p>Implementing cryptocurrency payment solutions and blockchain technologies for various applications.</p>
+                <p>Implementing cryptocurrency payment solutions, Solidity smart contracts (including escrows), and Web3 wallet integrations for product workflows.</p>
                 <h4>Key Deliverables:</h4>
                 <ul>
-                    <li>Web3.js integration</li>
-                    <li>Wallet Connect implementation</li>
+                    <li>Web3.js / Ethers.js integration</li>
+                    <li>Wallet Connect / Reown AppKit implementation</li>
                     <li>Crypto payment processing</li>
+                    <li>Solidity smart contracts (escrow, conditional release, payment helpers)</li>
+                    <li>On-chain event indexing and transaction UX</li>
                 </ul>
             </div>
 
@@ -1169,10 +1241,13 @@
 
             <h3>Industry Experience</h3>
             <ul>
-                <li><strong>Financial Technology (FinTech):</strong> Extensive experience in blockchain-based payment systems, crypto transactions, and cross-border payment solutions</li>
+                <li><strong>Financial Technology (FinTech):</strong> Extensive experience in blockchain-based payment systems, crypto transactions, cross-border payment solutions, and AI-assisted personal finance tooling (Finance Tracker)</li>
+                <li><strong>Blockchain / Web3:</strong> Wallet integrations, Solidity smart contracts (escrows), on-chain session audit demos, Concordium/EVM payment adapters</li>
+                <li><strong>Artificial Intelligence:</strong> Production RAG chatbots, structured LLM pipelines, AI-assisted engineering with Claude/Cursor</li>
                 <li><strong>E-commerce:</strong> Built digital shop management platforms and inventory systems</li>
                 <li><strong>Education Technology (EdTech):</strong> Developed online tutoring platforms with video streaming capabilities</li>
                 <li><strong>Travel Technology:</strong> Created travel booking platforms with payment integrations</li>
+                <li><strong>Developer Tools:</strong> Webhook Viewer for real-time HTTP/webhook debugging</li>
             </ul>
 
             <h3>Technical Expertise Areas</h3>
@@ -1180,9 +1255,9 @@
                 <li><strong>System Architecture Design:</strong> Extensive experience in designing comprehensive system architectures, defining component interactions, data flows, and system boundaries. Expertise in creating architectural documentation including system diagrams, sequence diagrams, and technical specifications</li>
                 <li><strong>Money Flow Architecture:</strong> Specialized in designing and documenting money flow architectures for payment and payout systems, mapping transaction flows from initiation to settlement. Experience in creating detailed money flow diagrams covering crypto and fiat currency transactions, cross-border transfers, currency conversions, and settlement processes</li>
                 <li><strong>Feature Architecture:</strong> Expertise in architecting feature specifications and implementation plans, ensuring scalability, maintainability, and performance optimization. Experience in designing feature architectures that align with business requirements while maintaining technical feasibility</li>
-                <li><strong>Blockchain & Web3:</strong> Deep expertise in Web3.js, Ether.js, smart contract development (Solidity), EVM and Concordium networks, wallet integrations, and blockchain-based payment systems</li>
+                <li><strong>Blockchain & Web3:</strong> Deep expertise in Web3.js, Ether.js, smart contract development (Solidity), EVM and Concordium networks, wallet integrations, and blockchain-based payment systems. Hands-on with <strong>escrow smart contracts</strong> (deposit/lock/release/refund state machines), conditional payment settlement, and related on-chain helpers wired to Node.js backends and React/Next frontends</li>
                 <li><strong>Payment Systems:</strong> Specialized in integrating multiple payment gateways (Stripe, PayPal, Razorpay, Apple Pay), crypto payment processing, cross-border payment solutions, and multi-currency payout systems (crypto and fiat)</li>
-                <li><strong>RAG Systems & AI:</strong> Built RAG (Retrieval Augmented Generation) system using LangChain framework with Pinecone vector database. Experience in vector embeddings, semantic search, and AI-powered information retrieval systems. Developed production-ready AI chatbot with real-time WebSocket communication, context management, and smart email integration using RAG → Tool architecture</li>
+                <li><strong>RAG Systems & AI:</strong> Built RAG (Retrieval Augmented Generation) system using LangChain framework with Pinecone vector database. Experience in vector embeddings, semantic search, and AI-powered information retrieval systems. Developed production-ready AI chatbot with real-time WebSocket communication, context management, and smart email integration using RAG → Tool architecture. Uses <strong>Claude and Cursor</strong> as engineering copilots to speed delivery while retaining ownership of architecture, reviews, and production decisions</li>
                 <li><strong>Modern Web3 Development:</strong> Extensive experience with Reown AppKit, Wagmi, and Viem for Ethereum wallet integration. Built production-ready Web3 applications with multi-wallet support, real-time token balance fetching, and on-chain token swapping capabilities</li>
                 <li><strong>Blockchain Session Management:</strong> Designed and implemented blockchain-based session tracking systems using Ethereum smart contracts. Experience with Sepolia testnet, transaction hash generation, and blockchain explorer integration for transparent, immutable audit trails</li>
                 <li><strong>Real-Time Web Applications:</strong> Built real-time features using Socket.IO, WebSocket connections, and automatic polling. Experience with live updates, instant messaging, and real-time state synchronization</li>
@@ -1216,7 +1291,7 @@
                 <li>Successfully architected and implemented one-click crypto payment system for cross-border transfers across multiple regions (EU, US, LATAM, Australia)</li>
                 <li>Designed comprehensive system architectures with detailed feature specifications and money flow diagrams for payment and payout systems</li>
                 <li>Created money flow architectures mapping transaction flows from initiation to settlement for both crypto and fiat currency transactions</li>
-                <li>Developed and deployed smart contracts for blockchain-based payment solutions</li>
+                <li>Developed and deployed smart contracts for blockchain-based payment solutions, including <strong>escrow</strong> and conditional-release patterns</li>
                 <li>Created scalable vendor integration systems using dependency injection patterns</li>
                 <li>Implemented Web3-based age verification methods for compliance in blockchain applications</li>
                 <li>Led vendor evaluation and selection processes with full ownership, establishing acceptance criteria and making final technical decisions for vendor partnerships</li>
@@ -1335,6 +1410,92 @@
         </section>
 
 
+        <!-- Interview Q&A Knowledge Base -->
+        <section class="section">
+            <h2>Common Interview Questions &amp; Model Answers</h2>
+            <p class="meta-info">Use this section when recruiters or interviewers ask classic screening, behavioral (STAR), and technical questions. Answers should stay first-person as Manish and only use facts from this document.</p>
+
+            <div class="experience-item">
+                <h3>Screening &amp; Logistics</h3>
+                <ul>
+                    <li><strong>Q: Tell me about yourself.</strong> A: Use the Elevator Pitch under Professional Summary — 5+ years full-stack, RocketFuel FinTech/Web3 ownership, personal production products (Finance Tracker, Portfolio Assistant), Claude/Cursor for speed with ownership retained, available immediately.</li>
+                    <li><strong>Q: What is your notice period / when can you join?</strong> A: 0 days — can join immediately.</li>
+                    <li><strong>Q: Are you open to remote / onsite / relocation?</strong> A: Yes to remote, onsite, and relocation; flexible across IST and overlapping US/EU hours.</li>
+                    <li><strong>Q: Full-time or contract?</strong> A: Open to both; full-time preferred but flexible.</li>
+                    <li><strong>Q: Salary expectations?</strong> A: Open to discuss on the call based on role, scope, and location/comp structure (fixed, equity, performance-based).</li>
+                    <li><strong>Q: Why are you looking / why this role?</strong> A: Looking for the next challenge with strong product ownership — FinTech, Web3, AI-powered products, or modern full-stack platforms — where end-to-end ownership and impact matter.</li>
+                    <li><strong>Q: How do we contact you?</strong> A: Primary manish25.manish2488@gmail.com; secondary contact@manishfullstack.online for product/Finance Tracker; phone +91 7004703084; LinkedIn and portfolio links in Personal Information.</li>
+                    <li><strong>Q: Work authorization?</strong> A: Indian citizen based in Jamshedpur, India; can work remotely for global companies as contractor or full-time per employer needs.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Experience Deep-Dive (What Interviewers Probe)</h3>
+                <ul>
+                    <li><strong>Q: Walk me through your most recent role.</strong> A: Senior Full Stack Engineer at RocketFuel Blockchain (Feb 2023–present tenure listed). Full ownership across Payin, Payouts, Invoicing via Crypto, Loyalty, Business/B2B, merchant SDK; money-flow architecture; vendor selection; Web3 wallet adapters (EVM + Concordium); Solidity including escrow-style contracts; 1000+ tx/day; code reviews.</li>
+                    <li><strong>Q: What does “full ownership” mean for you?</strong> A: End-to-end — requirements/architecture, implementation, vendor decisions, integrations, production reliability, and collaboration with design/partners — not just tickets in one layer.</li>
+                    <li><strong>Q: Describe a money-flow / payment system you designed.</strong> A: Mapped pay-in → processing → payout/settlement across crypto and fiat, including cross-border US/LATAM considerations, vendor routing, reconciliation-minded audit trails, and diagrams for stakeholder alignment.</li>
+                    <li><strong>Q: Tell me about your smart contract / escrow work.</strong> A: Solidity escrow-style contracts with deposit → lock → release/refund/expiry; roles (depositor/beneficiary/arbiter patterns); events for indexing; integrated via Web3.js/Ethers.js with gas-aware submission and receipt handling; money-safe mindset on access control and state transitions.</li>
+                    <li><strong>Q: How have you used AI in your work?</strong> A: Built production RAG (LangChain + Pinecone) for Portfolio Assistant; Finance Tracker AI column mapping/classification/reports with Zod structured outputs; uses Claude + Cursor daily to accelerate delivery while owning reviews and production decisions.</li>
+                    <li><strong>Q: Leadership / mentoring example?</strong> A: Mentored 3 junior developers at Acquaintsoft; code review responsibilities at RocketFuel; leads by example, constructive reviews, knowledge sharing.</li>
+                    <li><strong>Q: Biggest production scale you’ve handled?</strong> A: 1000+ transactions per day in RocketFuel production systems; job pooling / process management for high-volume pay-in and loyalty.</li>
+                    <li><strong>Q: Favorite personal project and why?</strong> A: Finance Tracker — privacy-first AI bank statement intelligence (live at tracker.manishfullstack.online): client-side parsing, bounce detection from ledger pairs, metered trials, no Razorpay/in-app billing yet. Or Portfolio Assistant for end-to-end RAG → Socket.IO chat → email intent tooling.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Behavioral (STAR-Style) Answers</h3>
+                <ul>
+                    <li><strong>Q: Tell me about a challenging technical problem you solved.</strong> A: Situation — multi-vendor payment integrations at RocketFuel risked tight coupling. Task — support multiple vendors without rewriting core flows. Action — dependency injection and loose coupling for vendor adapters, clear acceptance criteria, money-flow diagrams. Result — scalable vendor onboarding and maintainable pay-in/payout paths.</li>
+                    <li><strong>Q: Describe a time you took ownership beyond your ticket.</strong> A: Owned entire product slices (invoicing, SDK, payouts) including vendor selection decisions, architecture docs, and UI/UX alignment — not only coding assigned stories.</li>
+                    <li><strong>Q: Conflict or disagreement at work?</strong> A: Addresses conflicts directly and professionally; focuses on shared goals and technical trade-offs (correctness, risk, delivery date); seeks perspectives before proposing a path; escalates with options rather than blame.</li>
+                    <li><strong>Q: Failure or mistake — what did you learn?</strong> A: Treats failures as learning; validates assumptions with PoCs; for money/auth/AI paths verifies end-to-end before trusting production; improves process (tests, checklists, clearer state machines) after incidents.</li>
+                    <li><strong>Q: How do you handle tight deadlines / production pressure?</strong> A: Stays calm, prioritizes user-impacting and money-critical paths, communicates risks early, negotiates scope when needed, ships iteratively rather than silently cutting quality on settlement/auth.</li>
+                    <li><strong>Q: Example of mentoring success.</strong> A: At Acquaintsoft mentored 3 juniors on skills, best practices, and delivery — guided problem-solving instead of only giving answers; celebrated their progress.</li>
+                    <li><strong>Q: How do you work remotely with global teams?</strong> A: Strong async written updates, overlapping hours when needed, clear docs, proactive status without waiting to be asked; experience with EU/US/LATAM/Australia market products.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Technical Interview Themes</h3>
+                <ul>
+                    <li><strong>Q: How would you design a payout / payment API?</strong> A: Explicit states (created → processing → succeeded/failed), idempotency keys, durable job/queue processing, reconciliation against vendor webhooks, audit logs, retries with backoff, clear money-flow diagrams, and least-privilege admin tools.</li>
+                    <li><strong>Q: How do you ensure idempotency?</strong> A: Client/request idempotency keys; store processed intent IDs; safe retries; webhook deduplication; never double-pay on replay.</li>
+                    <li><strong>Q: Frontend performance?</strong> A: Code splitting, lazy loading, Next.js SSR/SSG where useful, TanStack Query caching, image/font optimization, responsive mobile-first UI.</li>
+                    <li><strong>Q: Database choices?</strong> A: PostgreSQL for relational/transactional data; MongoDB when flexible documents fit; TypeORM/SQL migrations on products like Finance Tracker; indexes and schema design for query patterns.</li>
+                    <li><strong>Q: Auth approach you’ve shipped?</strong> A: Email/password + OTP verification, JWT in httpOnly cookies (jose), bcrypt hashes, admin vs user roles, trial metering tied to authenticated usage (Finance Tracker).</li>
+                    <li><strong>Q: How do you test Web3 / contracts?</strong> A: Explicit state-machine tests for deposit/release/refund; verify events; end-to-end wallet → contract → receipt → UI status on testnets (e.g. Sepolia for session tracker demos).</li>
+                    <li><strong>Q: RAG — how does it work in your portfolio assistant?</strong> A: Chunk/embed knowledge → Pinecone → retrieve top-k context → LLM (e.g. gpt-4o-mini) with prompt constraints → Socket.IO reply; history rewrite for follow-ups; email-intent tool flow.</li>
+                    <li><strong>Q: Strengths?</strong> A: End-to-end ownership, FinTech/Web3 + AI product building, clear architecture/communication, mentoring, shipping live products.</li>
+                    <li><strong>Q: Weaknesses / growth areas?</strong> A: Continuously deepening formal test automation coverage and system-design breadth at larger scale; actively improves by adding tests/CI gates and studying architecture patterns while shipping.</li>
+                    <li><strong>Q: Do you use AI to write all your code?</strong> A: No — Claude/Cursor accelerate scaffolding, refactors, and exploration; Manish owns architecture, security, money-flow correctness, and final review before production.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Questions Interviewers Often Ask About Gaps — Clarifications</h3>
+                <ul>
+                    <li><strong>Team size at RocketFuel:</strong> Worked cross-functionally with designers, partners, and vendors; held code-review responsibility; exact headcount varies by product — emphasize ownership and collaboration over a fixed number if unknown.</li>
+                    <li><strong>Languages:</strong> Fluent English (written/spoken), native Hindi.</li>
+                    <li><strong>Education:</strong> B.Tech CSE, DRIEMS University (2020); Invock Top 20 at NMIMS Atal Incubation Centre; certifications in Generative AI (LangChain/RAG) and Ethereum/Solidity.</li>
+                    <li><strong>Finance Tracker payments:</strong> Manual recharge via email only today — do <em>not</em> claim Razorpay/card billing or server-stored bank files.</li>
+                    <li><strong>Mobile apps:</strong> React Native experience (StarTutor, FlyMeOut, Acquaintsoft); Finance Tracker is a web PWA, not a native store app.</li>
+                    <li><strong>References:</strong> Available upon request.</li>
+                    <li><strong>Background checks:</strong> Willing to undergo as required.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Strengths, Collaboration Tools &amp; Day-to-Day</h3>
+                <ul>
+                    <li><strong>Day-to-day:</strong> Mix of architecture, coding (Node/React/Next/TypeScript), integrations, reviews, and shipping; uses GitHub, CI/CD, docs, and AI assistants (Claude/Cursor).</li>
+                    <li><strong>Collaboration:</strong> Comfortable with PR reviews, async updates, standups/planning-style rituals, pair programming, and stakeholder demos.</li>
+                    <li><strong>Documentation:</strong> Money-flow diagrams, API/SDK docs, architecture notes, and clear PR descriptions.</li>
+                    <li><strong>On-call / incidents mindset:</strong> Reproduce → contain money/auth risk → fix with verification → add guardrails (tests, alerts, clearer states) so it doesn’t recur.</li>
+                </ul>
+            </div>
+        </section>
+
         <!-- Contact Emails (AI Guidance) -->
         <section class="section">
             <h2>Contact Emails — Guidance for AI Answers</h2>
@@ -1349,7 +1510,7 @@
         </section>
 
         <footer style="margin-top: 50px; padding-top: 20px; border-top: 2px solid #e5e7eb; color: #64748b; text-align: center;">
-            <p>This document was generated for LLM training purposes. Last updated: 2026-08-08</p>
+            <p>This document was generated for LLM training purposes. Last updated: 2026-08-08 (interview Q&amp;A + AI/smart-contract expansions)</p>
             <p>For the most current information, visit: <a href="https://manishfullstack.online" style="color: #3b82f6;">https://manishfullstack.online</a> or <a href="https://fullstack-manish.netlify.app" style="color: #3b82f6;">https://fullstack-manish.netlify.app</a></p>
             <p style="margin-top: 10px; font-size: 0.9em;">This document contains comprehensive information about Manish Singh's professional profile, including work experience, projects, technical skills, personal projects (Finance Tracker, Webhook Viewer, Web3 Wallet Connect, Blockchain Session Tracker, Portfolio Assistant, Jarvis Assistant), and portfolio website features. Use this data to train LLMs for accurate and context-aware responses about his background and expertise.</p>
         </footer>
