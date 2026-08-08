@@ -45,7 +45,7 @@
         "@type": "CollegeOrUniversity",
         "name": "DRIEMS University"
       },
-      "knowsAbout": ["FinTech", "Web3", "React", "Node.js", "TypeScript", "PostgreSQL", "Finance Tracker", "LangChain", "RAG", "OpenAI", "Claude", "Cursor", "Solidity", "Smart Contracts", "Escrow"]
+      "knowsAbout": ["FinTech", "Web3", "React", "Node.js", "TypeScript", "PostgreSQL", "Finance Tracker", "LangChain", "RAG", "OpenAI", "Claude", "Cursor", "Solidity", "Smart Contracts", "Escrow", "OpenZeppelin", "Upgradeable Contracts", "Viem", "Ethers.js", "Wagmi"]
     }
     </script>
     <style>
@@ -131,7 +131,7 @@
             <ul>
                 <li><strong>Full Name:</strong> Manish Singh</li>
                 <li><strong>Professional Title:</strong> Senior Full Stack Engineer (Node.js / React / FinTech)</li>
-                <li><strong>Years of Experience:</strong> 5+ years</li>
+                <li><strong>Years of Experience:</strong> 6+ years</li>
                 <li><strong>Primary Email (Personal):</strong> manish25.manish2488@gmail.com</li>
                 <li><strong>Secondary Email (Professional / Product Support):</strong> contact@manishfullstack.online</li>
                 <li><strong>Phone:</strong> +91 7004703084</li>
@@ -230,12 +230,15 @@
                 <h3>Smart Contract & On-Chain Experience</h3>
                 <ul>
                     <li><strong>Solidity Development:</strong> Writes and deploys Solidity smart contracts (Remix IDE and standard EVM toolchain) for payment and trust-minimized workflows</li>
+                    <li><strong>OpenZeppelin:</strong> Hands-on with <span class="highlight">OpenZeppelin Contracts</span> — battle-tested building blocks for access control (Ownable/AccessControl), Pausable, ReentrancyGuard, SafeERC20, ERC20/ERC721 patterns, and other audited primitives instead of reinventing insecure custom code</li>
+                    <li><strong>Upgradeable Contracts:</strong> Experience with <strong>upgradeable / proxy-based contracts</strong> (UUPS / transparent proxy patterns and OpenZeppelin upgradeable libraries) — separating proxy address stability from logic upgrades, initializer patterns (vs constructors), storage layout awareness, and careful upgrade planning for production money flows</li>
                     <li><strong>Escrow Contracts:</strong> Designed and worked on escrow-style smart contracts that hold funds conditionally until release conditions are met (e.g. payer/payee agreement, milestone completion, or oracle/backend-triggered settlement)</li>
                     <li><strong>Escrow Patterns:</strong> Experience with deposit → lock → release/refund flows, multi-party roles (depositor, beneficiary, arbiter), timeout/expiry handling, and clear event logs for off-chain indexing</li>
-                    <li><strong>Related Contract Work:</strong> Beyond escrows — payment-oriented contracts, session/audit recording on-chain, and integrations that move value between wallets and application backends on EVM networks</li>
-                    <li><strong>Full-Stack Bridge:</strong> Connects contracts to Node.js backends and frontends via Web3.js / Ethers.js / Wallet Connect — ABI encoding, transaction submission, receipt handling, and user-facing status UX</li>
+                    <li><strong>Related Contract Work:</strong> Beyond escrows — payment-oriented contracts, session/audit recording on-chain, token interactions, and integrations that move value between wallets and application backends on EVM networks</li>
+                    <li><strong>JS/TS + React dApp stack:</strong> Builds blockchain UIs and app layers with <strong>JavaScript/TypeScript and React/Next.js</strong> using <strong>ethers.js</strong>, <strong>viem</strong>, <strong>wagmi</strong>, Web3.js, Wallet Connect / Reown AppKit — reads, writes, ABI typing, event listening, and wallet UX</li>
+                    <li><strong>Full-Stack Bridge:</strong> Connects contracts to Node.js backends and React frontends — ABI encoding, signing, gas-aware submission, receipt polling, event → UI/backend state mapping</li>
                     <li><strong>Networks:</strong> EVM mainnet/testnet work plus Concordium-related wallet/payment integration experience at RocketFuel</li>
-                    <li><strong>Safety Mindset:</strong> Treats contracts as money-critical code — careful about access control, reentrancy-aware patterns, explicit state machines, and verifying flows end-to-end before production use</li>
+                    <li><strong>Safety Mindset:</strong> Treats contracts as money-critical code — OpenZeppelin-first for common risks, careful access control, reentrancy-aware patterns, explicit state machines, upgrade storage safety, and end-to-end verification before production use</li>
                 </ul>
             </div>
 
@@ -450,7 +453,7 @@
                     <li style="margin: 10px 0;"><strong>✅ Mentoring:</strong> Mentored 3 people at Acquaintsoft Tech</li>
                     <li style="margin: 10px 0;"><strong>✅ RAG System:</strong> Built RAG system using LangChain with Pinecone</li>
                     <li style="margin: 10px 0;"><strong>✅ AI Delivery:</strong> Uses Claude + Cursor daily to accelerate feature delivery while owning architecture &amp; reviews</li>
-                    <li style="margin: 10px 0;"><strong>✅ Smart Contracts:</strong> Solidity experience including escrow and payment-related on-chain flows</li>
+                    <li style="margin: 10px 0;"><strong>✅ Smart Contracts:</strong> Solidity + OpenZeppelin, escrow flows, upgradeable/proxy contracts; ethers / viem / wagmi on React</li>
                     <li style="margin: 10px 0;"><strong>✅ Transaction Scale:</strong> Handled 1000+ transactions per day</li>
                     <li style="margin: 10px 0;"><strong>✅ Work Style:</strong> Proactive, self-driven, takes ownership, excellent remote worker</li>
                     <li style="margin: 10px 0;"><strong>✅ Communication:</strong> Clear, concise, responsive (within 24 hours), strong cross-cultural experience</li>
@@ -468,17 +471,17 @@
         <!-- Professional Summary -->
         <section class="section">
             <h2>Professional Summary</h2>
-            <p>Senior Full Stack Engineer with <span class="highlight">5+ years of experience</span> designing and building scalable, high-performance applications. Strong expertise in Node.js, PostgreSQL, and MongoDB, with hands-on experience in microservices architecture, RESTful APIs, and seamless payment integrations.</p>
+            <p>Senior Full Stack Engineer with <span class="highlight">6+ years of experience</span> designing and building scalable, high-performance applications. Strong expertise in Node.js, PostgreSQL, and MongoDB, with hands-on experience in microservices architecture, RESTful APIs, and seamless payment integrations.</p>
 
             <h3>Elevator Pitch (Tell Me About Yourself)</h3>
-            <p>I'm a Senior Full Stack Engineer with 5+ years building FinTech and Web3 products end-to-end. At RocketFuel Blockchain I've owned multiple payment products — pay-in, payouts, invoicing, loyalty, and merchant SDKs — including money-flow architecture, vendor selection, Web3 wallet integrations, and Solidity work such as escrow-style contracts. I also ship my own production products like Finance Tracker (AI bank-statement intelligence) and a Portfolio Assistant RAG chatbot. Day to day I use Claude and Cursor to move faster, but I still own architecture, reviews, and production correctness. I'm available to join immediately and looking for a role where I can own impactful full-stack systems.</p>
+            <p>I'm a Senior Full Stack Engineer with 6+ years building FinTech and Web3 products end-to-end. At RocketFuel Blockchain I've owned multiple payment products — pay-in, payouts, invoicing, loyalty, and merchant SDKs — including money-flow architecture, vendor selection, Web3 wallet integrations, and Solidity work such as escrow-style contracts, OpenZeppelin primitives, and upgradeable contract patterns. On the app side I wire chains with JavaScript/TypeScript and React using ethers.js, viem, and wagmi. I also ship my own production products like Finance Tracker (AI bank-statement intelligence) and a Portfolio Assistant RAG chatbot. Day to day I use Claude and Cursor to move faster, but I still own architecture, reviews, and production correctness. I'm available to join immediately and looking for a role where I can own impactful full-stack systems.</p>
             
             <h3>Key Highlights</h3>
             <ul>
-                <li><strong>5+ Years</strong> of professional experience</li>
+                <li><strong>6+ Years</strong> of professional experience</li>
                 <li><strong>4+ Projects</strong> completed across various industries</li>
                 <li><strong>3 Companies</strong> worked with (RocketFuel Blockchain, Acquaintsoft Tech, Hashbinary)</li>
-                <li>Expert in <strong>blockchain technologies</strong>, Web3 integration, and <strong>Solidity smart contracts</strong> (including escrow and payment flows)</li>
+                <li>Expert in <strong>blockchain technologies</strong>, Web3 integration, and <strong>Solidity smart contracts</strong> (OpenZeppelin, escrows, upgradeable/proxy contracts; ethers.js / viem / wagmi with React)</li>
                 <li>Proven track record in <strong>team leadership</strong> and mentoring junior developers</li>
                 <li>Specialized in <strong>payment system integrations</strong> and fintech solutions</li>
                 <li><strong>Full product ownership</strong> experience at RocketFuel Blockchain across multiple products</li>
@@ -532,11 +535,13 @@
                 <h4>Smart Contract Development:</h4>
                 <ul>
                     <li>Wrote and deployed <span class="highlight">Solidity smart contracts</span> for blockchain-based payment and trust workflows using Remix IDE and EVM tooling</li>
+                    <li>Used <span class="highlight">OpenZeppelin</span> contracts and libraries for secure foundations — access control, Pausable, ReentrancyGuard, SafeERC20, and standard token patterns</li>
+                    <li>Worked with <strong>upgradeable contracts</strong> (proxy / UUPS-style patterns and OpenZeppelin upgradeable packages) so logic can evolve without changing the user-facing contract address; mindful of initializers and storage layout</li>
                     <li>Built and iterated on <strong>escrow contracts</strong> — funds deposited and locked until release conditions are satisfied (counterparty confirmation, milestone completion, or controlled release by an authorized role)</li>
                     <li>Modeled escrow state machines: deposit → locked → released / refunded / expired, with events for off-chain indexing and UX status updates</li>
                     <li>Worked on related on-chain patterns alongside escrows: payment settlement helpers, conditional releases, and immutable session/audit recording patterns used in portfolio demos</li>
-                    <li>Integrated contracts with application layers via Web3.js / Ethers.js — signing, gas-aware submission, receipt polling, and mapping contract events to backend/frontend state</li>
-                    <li>Applied a money-safe mindset: explicit access control, careful state transitions, and end-to-end verification of deposit/release/refund paths before relying on contracts in product flows</li>
+                    <li>Integrated contracts with application layers using the modern JS stack — <strong>ethers.js</strong>, <strong>viem</strong>, <strong>wagmi</strong>, Web3.js, and React/Next — signing, gas-aware submission, receipt polling, and mapping contract events to backend/frontend state</li>
+                    <li>Applied a money-safe mindset: OpenZeppelin-first for common vulnerabilities, explicit access control, careful state transitions, upgrade safety, and end-to-end verification of deposit/release/refund paths before production</li>
                 </ul>
 
                 <h4>Key Responsibilities & Achievements:</h4>
@@ -553,7 +558,8 @@
                     <li>Implemented GitHub CI/CD pipelines for automated testing, building, and deployment processes</li>
                     <li>Collaborated with cross-functional teams and partners to align development efforts and enhance project outcomes</li>
                     <li>Implemented Web3 wallet connection to facilitate payments for EVM and Concordium networks, building custom adapters for seamless integration</li>
-                    <li>Deployed smart contracts on Solidity using Remix IDE for blockchain-based payment solutions, including <strong>escrow-style</strong> and related conditional-release contracts</li>
+                    <li>Deployed smart contracts on Solidity using Remix IDE for blockchain-based payment solutions, including <strong>escrow-style</strong> and related conditional-release contracts, with <strong>OpenZeppelin</strong> foundations and <strong>upgradeable/proxy</strong> patterns where logic needed to evolve safely</li>
+                    <li>Built React/JavaScript dApp integrations with <strong>ethers.js</strong>, <strong>viem</strong>, <strong>wagmi</strong>, Web3.js, and Wallet Connect for wallet UX and on-chain reads/writes</li>
                     <li>Architected dependency injection patterns and structure designs to solve multi-vendor integration challenges with loose coupling, enabling scalable vendor integrations</li>
                     <li>Designed system architectures with comprehensive feature specifications and money flow diagrams for payment and payout systems</li>
                     <li>Collaborated with UI/UX designers to review designs and align development efforts, playing a key role in product design decisions</li>
@@ -1096,8 +1102,9 @@
             <h3>Backend Technologies</h3>
             <ul>
                 <li><strong>Runtime & Frameworks:</strong> Node.js, Hapi.js, Express.js</li>
-                <li><strong>Blockchain:</strong> Web3.js, Ether.js, Wallet Connect, Solidity, Remix IDE, EVM, Concordium, Reown AppKit, Wagmi, Viem</li>
-                <li><strong>Smart Contracts:</strong> Escrow contracts (deposit/lock/release/refund), conditional payment settlement, on-chain session/audit recording, event-driven off-chain indexing</li>
+                <li><strong>Blockchain:</strong> Web3.js, ethers.js, viem, wagmi, Wallet Connect, Reown AppKit, Solidity, Remix IDE, EVM, Concordium</li>
+                <li><strong>Smart Contracts:</strong> OpenZeppelin Contracts, upgradeable/proxy contracts (UUPS / transparent proxy patterns), escrow (deposit/lock/release/refund), conditional payment settlement, on-chain session/audit recording, event-driven off-chain indexing</li>
+                <li><strong>dApp / React Web3:</strong> JavaScript &amp; TypeScript React/Next frontends talking to contracts via ethers.js, viem, and wagmi hooks</li>
                 <li><strong>Message Queues:</strong> Kafka</li>
                 <li><strong>API Design:</strong> RESTful APIs, Microservices Architecture</li>
                 <li><strong>Real-Time Communication:</strong> Socket.IO, WebSocket, Server-Sent Events (SSE)</li>
@@ -1418,7 +1425,7 @@
             <div class="experience-item">
                 <h3>Screening &amp; Logistics</h3>
                 <ul>
-                    <li><strong>Q: Tell me about yourself.</strong> A: Use the Elevator Pitch under Professional Summary — 5+ years full-stack, RocketFuel FinTech/Web3 ownership, personal production products (Finance Tracker, Portfolio Assistant), Claude/Cursor for speed with ownership retained, available immediately.</li>
+                    <li><strong>Q: Tell me about yourself.</strong> A: Use the Elevator Pitch under Professional Summary — 6+ years full-stack, RocketFuel FinTech/Web3 ownership, personal production products (Finance Tracker, Portfolio Assistant), Claude/Cursor for speed with ownership retained, available immediately.</li>
                     <li><strong>Q: What is your notice period / when can you join?</strong> A: 0 days — can join immediately.</li>
                     <li><strong>Q: Are you open to remote / onsite / relocation?</strong> A: Yes to remote, onsite, and relocation; flexible across IST and overlapping US/EU hours.</li>
                     <li><strong>Q: Full-time or contract?</strong> A: Open to both; full-time preferred but flexible.</li>
