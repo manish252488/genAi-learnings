@@ -2,11 +2,9 @@ import * as cheerio from "cheerio";
 import urlModule from "url";
 import cliProgress from "cli-progress";
 
-// Note: Full Langchain document takes a very long time to download. A short documentation is provided for the course (recommended).
-
-const Resume_URL =
-  "https://graceful-cascaron-e699ad.netlify.app";
-
+/** Live portfolio RAG knowledge base (Netlify). */
+export const Resume_URL =
+  "https://gleeful-empanada-88a2bd.netlify.app";
 
 const progressBar = new cliProgress.SingleBar({
   format: "Documents Crawled: {value}",
@@ -22,18 +20,16 @@ async function fetchLinkedUrls(url: string, downloadedUrls: Set<string>) {
     const html = await response.text();
     const $ = cheerio.load(html);
 
-    downloadedUrls.add(url); // Add URL to downloaded set
+    downloadedUrls.add(url);
 
-    // Extract all anchor tags
     const links: string[] = [];
-    $("a").each((index, element) => {
+    $("a").each((_index, element) => {
       const href = $(element).attr("href");
       if (href && href.startsWith(Resume_URL)) {
         links.push(href);
       }
     });
 
-    // Download HTML from linked URLs with reduced depth
     for (const link of links) {
       const absoluteUrl = urlModule.resolve(url, link);
       await fetchLinkedUrls(absoluteUrl, downloadedUrls);
@@ -54,5 +50,3 @@ export async function crawlResumeUrls(): Promise<string[]> {
   progressBar.stop();
   return [...urls];
 }
-
-
